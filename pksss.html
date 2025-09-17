@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Job Application Form</title>
+  <link rel="stylesheet" href="pksss.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Job Application Form</h1>
+    <form id="jobForm" novalidate>
+      <!-- Name -->
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Enter your name" />
+
+      <!-- Email -->
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="example@mail.com" />
+
+      <!-- Phone -->
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" placeholder="1234567890" maxlength="10" />
+
+      <!-- Message -->
+      <label for="message">Message</label>
+      <textarea id="message" rows="5" placeholder="Write your message..."></textarea>
+
+      <button type="submit">Submit Application</button>
+    </form>
+    <p id="error" class="error"></p>
+    <p id="success" class="success"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
